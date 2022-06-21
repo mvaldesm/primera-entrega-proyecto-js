@@ -161,6 +161,22 @@ const paises = [
     
 ]
 
+class creaPais {
+    constructor(id,pais,bandera,emoji,permiso,estadiaSimple,costoSimple,estadiaMultiple,costoMuliple,costoResidencia) {
+        this.id = id;
+        this.pais = pais;
+        this.bandera = bandera;
+        this.emoji = emoji;
+        this.permiso = permiso;
+        this.estadiaSimple = estadiaSimple;
+        this.costoSimple = costoSimple;
+        this.estadiaMultiple = estadiaMultiple;
+        this.costoMuliple = costoMuliple;
+        this.costoResidencia = costoResidencia;
+
+    }
+}
+
 // Función que calcula el costo del permiso de residencia temporal en pesos chilenos (CLP$)
 function costo(valor) {
     return valor * 866; // CLP$866 = USD$1 
